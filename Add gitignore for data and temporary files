@@ -1,0 +1,64 @@
+.gitignore
+# ============================================================
+# Relative Age Effect in Olympic Football
+# Files and folders excluded from Git version control
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Raw data
+# Individual-level datasets should not be published
+# ------------------------------------------------------------
+
+data/raw/*
+!data/raw/.gitkeep
+
+
+# ------------------------------------------------------------
+# Processed individual-level data
+# Keep private unless explicitly approved for publication
+# ------------------------------------------------------------
+
+data/processed/*
+!data/processed/.gitkeep
+
+
+# ------------------------------------------------------------
+# Excel datasets
+# Prevent accidental upload of source spreadsheets
+# ------------------------------------------------------------
+
+*.xlsx
+*.xls
+
+
+# ------------------------------------------------------------
+# Jupyter / Google Colab temporary files
+# ------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# Python temporary files
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+
+# ------------------------------------------------------------
+# Environment and credentials
+# Never publish secrets or environment variables
+# ------------------------------------------------------------
+
+.env
+.env.*
